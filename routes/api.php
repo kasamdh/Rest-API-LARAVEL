@@ -21,13 +21,13 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 
 
 
-// // get all country Information
-// Route::get('country','Country\CountryController@country');
-// //get country info by ID
-// Route::get('country/{id}','Country\CountryController@countryByID');
-// //Post data
-// Route::post('country','Country\CountryController@countrySave');
-// //update the record
-// Route::put('country/{id}','Country\CountryController@countryUpdate');
-// //API to delete record
-// Route::delete('country/{id}','Country\CountryController@countryDelete');
+// get all country Information
+Route::get('country','Country\CountryController@country');
+//get country info by ID
+Route::get('country/{id}','Country\CountryController@countryByID');
+//Post data
+Route::post('country','Country\CountryController@countrySave');
+//update the record
+Route::put('country/{id}','Country\CountryController@countryUpdate');
+//API to delete record
+Route::delete('country/{id}','Country\CountryController@countryDelete');
